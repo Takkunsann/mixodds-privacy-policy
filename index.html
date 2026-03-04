@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MixOdds Hub - プライバシーポリシー / Privacy Policy</title>
+    <title>MixOdds Hub - Legal</title>
     <style>
         * {
             margin: 0;
@@ -28,7 +28,7 @@
 
         .logo {
             text-align: center;
-            margin-bottom: 40px;
+            margin-bottom: 24px;
         }
 
         .logo h1 {
@@ -49,6 +49,28 @@
             color: #ffffff;
         }
 
+        .nav {
+            text-align: center;
+            margin-bottom: 16px;
+        }
+
+        .nav button {
+            background: none;
+            color: #888;
+            border: none;
+            border-bottom: 2px solid transparent;
+            padding: 8px 16px;
+            margin: 0 8px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: all 0.2s;
+        }
+
+        .nav button.active {
+            color: #2ECA7F;
+            border-bottom-color: #2ECA7F;
+        }
+
         .lang-toggle {
             text-align: center;
             margin-bottom: 32px;
@@ -58,11 +80,11 @@
             background: #1e1e1e;
             color: #e0e0e0;
             border: 1px solid #333;
-            padding: 8px 20px;
+            padding: 6px 16px;
             margin: 0 4px;
             border-radius: 20px;
             cursor: pointer;
-            font-size: 14px;
+            font-size: 13px;
             transition: all 0.2s;
         }
 
@@ -114,6 +136,10 @@
         .hidden {
             display: none;
         }
+
+        a {
+            color: #2ECA7F;
+        }
     </style>
 </head>
 
@@ -123,133 +149,287 @@
             <h1><span class="mix">Mix</span><span class="odds">Odds</span><span class="hub"> Hub</span></h1>
         </div>
 
+        <div class="nav">
+            <button id="nav-privacy" class="active" onclick="showPage('privacy')">プライバシーポリシー</button>
+            <button id="nav-terms" onclick="showPage('terms')">利用規約</button>
+        </div>
+
         <div class="lang-toggle">
             <button id="btn-ja" class="active" onclick="showLang('ja')">日本語</button>
             <button id="btn-en" onclick="showLang('en')">English</button>
         </div>
 
-        <!-- 日本語 -->
-        <div id="lang-ja">
-            <h2>プライバシーポリシー</h2>
-            <p>最終更新日: 2026年3月4日</p>
+        <!-- ==================== PRIVACY POLICY ==================== -->
+        <div id="page-privacy">
 
-            <div class="section">
-                <h3>1. はじめに</h3>
-                <p>MixOdds Hub（以下「本アプリ」）は、個人開発者が運営するポーカーオッズ計算アプリケーションです。本プライバシーポリシーでは、本アプリにおけるユーザー情報の取り扱いについて説明します。</p>
+            <!-- 日本語 プライバシーポリシー -->
+            <div id="privacy-ja">
+                <h2>プライバシーポリシー</h2>
+                <p>最終更新日: 2026年3月4日</p>
+
+                <div class="section">
+                    <h3>1. はじめに</h3>
+                    <p>MixOdds Hub（以下「本アプリ」）は、個人開発者が運営するポーカーオッズ計算アプリケーションです。本プライバシーポリシーでは、本アプリにおけるユーザー情報の取り扱いについて説明します。
+                    </p>
+                </div>
+
+                <div class="section">
+                    <h3>2. 収集する情報</h3>
+                    <p>本アプリは、<strong>ユーザーの個人情報を一切収集・送信しません</strong>。</p>
+                    <p>以下のデータはすべてお使いのデバイス内にのみ保存され、外部サーバーには送信されません：</p>
+                    <ul>
+                        <li>言語設定</li>
+                        <li>デッキカラー設定（2色/4色）</li>
+                        <li>テーマ設定（ダーク/ライト）</li>
+                        <li>計算結果の履歴</li>
+                        <li>トライアル利用状況</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>3. サブスクリプション</h3>
+                    <p>本アプリはApp Storeを通じたサブスクリプション（月額課金）を提供しています。課金に関する情報はApple Inc.が管理しており、開発者がお支払い情報にアクセスすることはありません。
+                    </p>
+                    <ul>
+                        <li>月額料金: ¥1,000</li>
+                        <li>無料トライアル: 3日間</li>
+                        <li>サブスクリプションは自動更新されます</li>
+                        <li>解約はApp Storeの設定から行えます</li>
+                        <li>トライアル期間終了後、自動的に課金が開始されます</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>4. 第三者サービス</h3>
+                    <p>本アプリは以下の第三者サービスを使用しています：</p>
+                    <ul>
+                        <li><strong>Apple App Store</strong> - アプリの配信およびサブスクリプション管理</li>
+                        <li><strong>Google Fonts</strong> - フォントの読み込み</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>5. 子どものプライバシー</h3>
+                    <p>本アプリは、13歳未満の子どもを対象としておらず、意図的にそのような方から個人情報を収集することはありません。</p>
+                </div>
+
+                <div class="section">
+                    <h3>6. プライバシーポリシーの変更</h3>
+                    <p>本プライバシーポリシーは、必要に応じて更新される場合があります。変更があった場合は、このページを更新します。</p>
+                </div>
+
+                <div class="section">
+                    <h3>7. お問い合わせ</h3>
+                    <p>ご質問がありましたら、以下までお問い合わせください。</p>
+                    <p>メール: <a href="mailto:takenriver27@gmail.com">takenriver27@gmail.com</a></p>
+                </div>
             </div>
 
-            <div class="section">
-                <h3>2. 収集する情報</h3>
-                <p>本アプリは、<strong>ユーザーの個人情報を一切収集・送信しません</strong>。</p>
-                <p>以下のデータはすべてお使いのデバイス内にのみ保存され、外部サーバーには送信されません：</p>
-                <ul>
-                    <li>言語設定</li>
-                    <li>デッキカラー設定（2色/4色）</li>
-                    <li>テーマ設定（ダーク/ライト）</li>
-                    <li>計算結果の履歴</li>
-                    <li>トライアル利用状況</li>
-                </ul>
-            </div>
+            <!-- English Privacy Policy -->
+            <div id="privacy-en" class="hidden">
+                <h2>Privacy Policy</h2>
+                <p>Last updated: March 4, 2026</p>
 
-            <div class="section">
-                <h3>3. サブスクリプション</h3>
-                <p>本アプリはApp Storeを通じたサブスクリプション（月額課金）を提供しています。課金に関する情報はApple Inc.が管理しており、開発者がお支払い情報にアクセスすることはありません。</p>
-                <ul>
-                    <li>月額料金: ¥1,000</li>
-                    <li>無料トライアル: 3日間</li>
-                    <li>サブスクリプションは自動更新されます</li>
-                    <li>解約はApp Storeの設定から行えます</li>
-                    <li>トライアル期間終了後、自動的に課金が開始されます</li>
-                </ul>
-            </div>
+                <div class="section">
+                    <h3>1. Introduction</h3>
+                    <p>MixOdds Hub ("the App") is a poker odds calculator application developed by an independent
+                        developer. This Privacy Policy explains how user information is handled within the App.</p>
+                </div>
 
-            <div class="section">
-                <h3>4. 第三者サービス</h3>
-                <p>本アプリは以下の第三者サービスを使用しています：</p>
-                <ul>
-                    <li><strong>Apple App Store</strong> - アプリの配信およびサブスクリプション管理</li>
-                    <li><strong>Google Fonts</strong> - フォントの読み込み（Interフォント）</li>
-                </ul>
-            </div>
+                <div class="section">
+                    <h3>2. Information We Collect</h3>
+                    <p>The App <strong>does not collect or transmit any personal information</strong>.</p>
+                    <p>The following data is stored only on your device and is never sent to external servers:</p>
+                    <ul>
+                        <li>Language preferences</li>
+                        <li>Deck color settings (2-color/4-color)</li>
+                        <li>Theme settings (dark/light)</li>
+                        <li>Calculation result history</li>
+                        <li>Trial usage status</li>
+                    </ul>
+                </div>
 
-            <div class="section">
-                <h3>5. 子どものプライバシー</h3>
-                <p>本アプリは、13歳未満の子どもを対象としておらず、意図的にそのような方から個人情報を収集することはありません。</p>
-            </div>
+                <div class="section">
+                    <h3>3. Subscriptions</h3>
+                    <p>The App offers subscriptions through the App Store. Payment information is managed by Apple Inc.,
+                        and the developer does not have access to your payment details.</p>
+                    <ul>
+                        <li>Monthly fee: ¥1,000</li>
+                        <li>Free trial: 3 days</li>
+                        <li>Subscriptions renew automatically</li>
+                        <li>Cancel via App Store settings</li>
+                        <li>Billing starts automatically after trial period ends</li>
+                    </ul>
+                </div>
 
-            <div class="section">
-                <h3>6. プライバシーポリシーの変更</h3>
-                <p>本プライバシーポリシーは、必要に応じて更新される場合があります。変更があった場合は、このページを更新します。</p>
-            </div>
+                <div class="section">
+                    <h3>4. Third-Party Services</h3>
+                    <ul>
+                        <li><strong>Apple App Store</strong> - App distribution and subscription management</li>
+                        <li><strong>Google Fonts</strong> - Font loading</li>
+                    </ul>
+                </div>
 
-            <div class="section">
-                <h3>7. お問い合わせ</h3>
-                <p>本プライバシーポリシーに関するご質問がありましたら、以下までお問い合わせください。</p>
-                <p>メール: <a href="mailto:takenriver27@gmail.com" style="color: #2ECA7F;">takenriver27@gmail.com</a></p>
+                <div class="section">
+                    <h3>5. Children's Privacy</h3>
+                    <p>The App is not intended for children under the age of 13, and we do not knowingly collect
+                        personal information from such individuals.</p>
+                </div>
+
+                <div class="section">
+                    <h3>6. Changes to This Policy</h3>
+                    <p>This Privacy Policy may be updated as needed. Any changes will be reflected on this page.</p>
+                </div>
+
+                <div class="section">
+                    <h3>7. Contact Us</h3>
+                    <p>Email: <a href="mailto:takenriver27@gmail.com">takenriver27@gmail.com</a></p>
+                </div>
             </div>
         </div>
 
-        <!-- English -->
-        <div id="lang-en" class="hidden">
-            <h2>Privacy Policy</h2>
-            <p>Last updated: March 4, 2026</p>
+        <!-- ==================== TERMS OF SERVICE ==================== -->
+        <div id="page-terms" class="hidden">
 
-            <div class="section">
-                <h3>1. Introduction</h3>
-                <p>MixOdds Hub ("the App") is a poker odds calculator application developed by an independent developer.
-                    This Privacy Policy explains how user information is handled within the App.</p>
+            <!-- 日本語 利用規約 -->
+            <div id="terms-ja">
+                <h2>利用規約</h2>
+                <p>最終更新日: 2026年3月4日</p>
+
+                <div class="section">
+                    <h3>1. はじめに</h3>
+                    <p>本利用規約（以下「本規約」）は、MixOdds Hub（以下「本アプリ」）の利用条件を定めるものです。本アプリをダウンロードまたは使用することにより、本規約に同意したものとみなされます。</p>
+                </div>
+
+                <div class="section">
+                    <h3>2. サービスの内容</h3>
+                    <p>本アプリは、各種ポーカーゲームの勝率（オッズ）を計算するツールです。</p>
+                    <ul>
+                        <li>無料版: Texas Hold'em、Omaha、Seven Card Studの勝率計算</li>
+                        <li>プレミアム版: 上記に加え、Razz、Badugi、Big O等を含む全ゲームの勝率計算</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>3. サブスクリプション</h3>
+                    <ul>
+                        <li>プレミアム機能は月額¥1,000のサブスクリプションで利用可能です</li>
+                        <li>初回のみ3日間の無料トライアルが利用できます</li>
+                        <li>サブスクリプションは期間終了時に自動更新されます</li>
+                        <li>更新日の24時間前までにApple IDの設定からキャンセルしない限り、自動的に課金されます</li>
+                        <li>無料トライアル期間中にキャンセルした場合、料金は発生しません</li>
+                        <li>購入後の返金はAppleのポリシーに準じます</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>4. 免責事項</h3>
+                    <p>本アプリが提供する計算結果には、<strong>誤差が発生する場合があります</strong>。計算結果はあくまで参考値であり、その正確性、完全性を保証するものではありません。</p>
+                    <p>計算結果に基づく判断や行動により生じた損害について、開発者は一切の責任を負いません。</p>
+                </div>
+
+                <div class="section">
+                    <h3>5. 禁止事項</h3>
+                    <p>以下の行為を禁止します：</p>
+                    <ul>
+                        <li>本アプリのリバースエンジニアリング、逆コンパイル、逆アセンブル</li>
+                        <li>本アプリの不正な改変、二次配布</li>
+                        <li>本アプリを利用した違法行為</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>6. 知的財産権</h3>
+                    <p>本アプリに関するすべての知的財産権は開発者に帰属します。</p>
+                </div>
+
+                <div class="section">
+                    <h3>7. 規約の変更</h3>
+                    <p>本規約は、必要に応じて変更される場合があります。重要な変更がある場合は、本ページの更新をもって通知とします。</p>
+                </div>
+
+                <div class="section">
+                    <h3>8. 準拠法</h3>
+                    <p>本規約は、日本法に準拠し、解釈されるものとします。</p>
+                </div>
+
+                <div class="section">
+                    <h3>9. お問い合わせ</h3>
+                    <p>ご質問がありましたら、以下までお問い合わせください。</p>
+                    <p>メール: <a href="mailto:takenriver27@gmail.com">takenriver27@gmail.com</a></p>
+                </div>
             </div>
 
-            <div class="section">
-                <h3>2. Information We Collect</h3>
-                <p>The App <strong>does not collect or transmit any personal information</strong>.</p>
-                <p>The following data is stored only on your device and is never sent to external servers:</p>
-                <ul>
-                    <li>Language preferences</li>
-                    <li>Deck color settings (2-color/4-color)</li>
-                    <li>Theme settings (dark/light)</li>
-                    <li>Calculation result history</li>
-                    <li>Trial usage status</li>
-                </ul>
-            </div>
+            <!-- English Terms of Service -->
+            <div id="terms-en" class="hidden">
+                <h2>Terms of Service</h2>
+                <p>Last updated: March 4, 2026</p>
 
-            <div class="section">
-                <h3>3. Subscriptions</h3>
-                <p>The App offers subscriptions through the App Store. Payment information is managed by Apple Inc., and
-                    the developer does not have access to your payment details.</p>
-                <ul>
-                    <li>Monthly fee: ¥1,000</li>
-                    <li>Free trial: 3 days</li>
-                    <li>Subscriptions renew automatically</li>
-                    <li>Cancel via App Store settings</li>
-                    <li>Billing starts automatically after trial period ends</li>
-                </ul>
-            </div>
+                <div class="section">
+                    <h3>1. Introduction</h3>
+                    <p>These Terms of Service ("Terms") govern your use of MixOdds Hub ("the App"). By downloading or
+                        using the App, you agree to these Terms.</p>
+                </div>
 
-            <div class="section">
-                <h3>4. Third-Party Services</h3>
-                <p>The App uses the following third-party services:</p>
-                <ul>
-                    <li><strong>Apple App Store</strong> - App distribution and subscription management</li>
-                    <li><strong>Google Fonts</strong> - Font loading (Inter font)</li>
-                </ul>
-            </div>
+                <div class="section">
+                    <h3>2. Service Description</h3>
+                    <p>The App is a poker odds calculator tool.</p>
+                    <ul>
+                        <li>Free: Texas Hold'em, Omaha, and Seven Card Stud odds calculation</li>
+                        <li>Premium: All games including Razz, Badugi, Big O, and more</li>
+                    </ul>
+                </div>
 
-            <div class="section">
-                <h3>5. Children's Privacy</h3>
-                <p>The App is not intended for children under the age of 13, and we do not knowingly collect personal
-                    information from such individuals.</p>
-            </div>
+                <div class="section">
+                    <h3>3. Subscriptions</h3>
+                    <ul>
+                        <li>Premium features are available via a monthly subscription at ¥1,000</li>
+                        <li>A 3-day free trial is available for first-time users only</li>
+                        <li>Subscriptions automatically renew at the end of each period</li>
+                        <li>You will be charged unless you cancel at least 24 hours before the renewal date via your
+                            Apple ID settings</li>
+                        <li>No charge if cancelled during the free trial period</li>
+                        <li>Refunds are subject to Apple's refund policy</li>
+                    </ul>
+                </div>
 
-            <div class="section">
-                <h3>6. Changes to This Policy</h3>
-                <p>This Privacy Policy may be updated as needed. Any changes will be reflected on this page.</p>
-            </div>
+                <div class="section">
+                    <h3>4. Disclaimer</h3>
+                    <p>Calculation results provided by the App <strong>may contain margin of error</strong>. Results are
+                        for reference purposes only and are not guaranteed to be accurate or complete.</p>
+                    <p>The developer assumes no liability for any damages arising from decisions or actions based on the
+                        calculation results.</p>
+                </div>
 
-            <div class="section">
-                <h3>7. Contact Us</h3>
-                <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-                <p>Email: <a href="mailto:takenriver27@gmail.com" style="color: #2ECA7F;">takenriver27@gmail.com</a></p>
+                <div class="section">
+                    <h3>5. Prohibited Activities</h3>
+                    <ul>
+                        <li>Reverse engineering, decompiling, or disassembling the App</li>
+                        <li>Unauthorized modification or redistribution of the App</li>
+                        <li>Using the App for illegal activities</li>
+                    </ul>
+                </div>
+
+                <div class="section">
+                    <h3>6. Intellectual Property</h3>
+                    <p>All intellectual property rights related to the App belong to the developer.</p>
+                </div>
+
+                <div class="section">
+                    <h3>7. Changes to Terms</h3>
+                    <p>These Terms may be updated as needed. Significant changes will be communicated by updating this
+                        page.</p>
+                </div>
+
+                <div class="section">
+                    <h3>8. Governing Law</h3>
+                    <p>These Terms shall be governed by and construed in accordance with the laws of Japan.</p>
+                </div>
+
+                <div class="section">
+                    <h3>9. Contact Us</h3>
+                    <p>Email: <a href="mailto:takenriver27@gmail.com">takenriver27@gmail.com</a></p>
+                </div>
             </div>
         </div>
 
@@ -259,12 +439,37 @@
     </div>
 
     <script>
+        let currentPage = 'privacy';
+        let currentLang = 'ja';
+
+        function showPage(page) {
+            currentPage = page;
+            document.getElementById('page-privacy').classList.toggle('hidden', page !== 'privacy');
+            document.getElementById('page-terms').classList.toggle('hidden', page !== 'terms');
+            document.getElementById('nav-privacy').classList.toggle('active', page === 'privacy');
+            document.getElementById('nav-terms').classList.toggle('active', page === 'terms');
+            applyLang();
+        }
+
         function showLang(lang) {
-            document.getElementById('lang-ja').classList.toggle('hidden', lang !== 'ja');
-            document.getElementById('lang-en').classList.toggle('hidden', lang !== 'en');
+            currentLang = lang;
             document.getElementById('btn-ja').classList.toggle('active', lang === 'ja');
             document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+            applyLang();
         }
+
+        function applyLang() {
+            document.getElementById('privacy-ja').classList.toggle('hidden', currentPage !== 'privacy' || currentLang !== 'ja');
+            document.getElementById('privacy-en').classList.toggle('hidden', currentPage !== 'privacy' || currentLang !== 'en');
+            document.getElementById('terms-ja').classList.toggle('hidden', currentPage !== 'terms' || currentLang !== 'ja');
+            document.getElementById('terms-en').classList.toggle('hidden', currentPage !== 'terms' || currentLang !== 'en');
+            // Update nav text based on language
+            document.getElementById('nav-privacy').textContent = currentLang === 'ja' ? 'プライバシーポリシー' : 'Privacy Policy';
+            document.getElementById('nav-terms').textContent = currentLang === 'ja' ? '利用規約' : 'Terms of Service';
+        }
+
+        // Handle URL hash for direct linking
+        if (window.location.hash === '#terms') showPage('terms');
     </script>
 </body>
 
